@@ -10,6 +10,13 @@
 
 ## 誰がだれを射抜いたかを表示させる
     tellraw @a [{"color":"red","text":"["},{"bold":true,"color":"dark_red","text":"KILL"},{"bold":false,"color":"red","text":"] "},{"bold":true,"selector":"@a[tag=killer]"},{"bold":false,"color":"white","text":" ☠ "},{"bold":true,"selector":"@a[tag=murdered]"}]
+
+## KILL,DEATH数追加
+    scoreboard players add @a[tag=murdered] DEATH 1
+    scoreboard players add @a[tag=murdered] DEATH-ALL 1
+    scoreboard players add @a[tag=killer] KILL 1
+    scoreboard players add @a[tag=killer] KILL-ALL 1
+
 ## RESET
     advancement revoke @a only player:hit_by_arrow
     advancement revoke @a only player:hurt_player

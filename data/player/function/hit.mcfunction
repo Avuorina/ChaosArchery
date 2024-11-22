@@ -12,7 +12,11 @@
     tag @a[advancements={player:hurt_player=true},limit=1] add perpetrator
 
 ## 誰がだれを射抜いたかを表示させる
-    execute if entity @s[tag=perpetrator] run tellraw @a [{"color":"white","text":"["},{"bold":true,"color":"aqua","text":"HIT"},{"bold":false,"color":"white","text":"] "},{"bold":true,"selector":"@a[tag=perpetrator]"},{"bold":false,"color":"white","text":"  ➳  "},{"bold":true,"selector":"@a[tag=victim]"}]
+    execute if entity @s[tag=perpetrator] run tellraw @a [{"color":"white","text":"["},{"bold":true,"color":"red","text":"HIT"},{"bold":false,"color":"white","text":"] "},{"bold":true,"selector":"@a[tag=perpetrator]"},{"bold":false,"color":"white","text":"  ➳  "},{"bold":true,"selector":"@a[tag=victim]"}]
+
+## HIT数を追加
+    scoreboard players add @a[tag=victim] HIT 1
+    scoreboard players add @a[tag=victim] HIT-ALL 1
 
 ## RESET
     advancement revoke @a only player:hit_by_arrow

@@ -16,6 +16,23 @@
             team modify BLUE color blue
             team modify BLUE friendlyFire false
 
+## スコアボード
+    # dummy
+        # HIT
+            scoreboard objectives add HIT dummy {"text": "HIT数"}
+        # HIT-ALL
+            scoreboard objectives add HIT-ALL dummy {"text": "生涯HIT数"}
+        # KILL
+            scoreboard objectives add KILL dummy {"text": "KILL数"}
+        # KILL-ALL
+            scoreboard objectives add KILL-ALL dummy {"text": "生涯KILL数"}
+        # DEATH
+            scoreboard objectives add DEATH dummy {"text": "DEATH数"}
+        # DEATH-ALL
+            scoreboard objectives add DEATH-ALL dummy {"text": "生涯DEATH数"}
+        # K/D
+            scoreboard objectives add K.D dummy {"text": "キルデス比"}
+
 ## ゲームルール
     # 死亡画面削除
         gamerule doImmediateRespawn true
