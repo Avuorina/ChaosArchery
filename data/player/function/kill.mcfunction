@@ -9,7 +9,7 @@
     tag @a[advancements={player:kill_player=true},limit=1] add killer
 
 ## 誰がだれを射抜いたかを表示させる
-    tellraw @a [{"color":"red","text":"["},{"bold":true,"color":"dark_red","text":"KILL"},{"bold":false,"color":"red","text":"] "},{"bold":true,"selector":"@a[tag=killer]"},{"bold":false,"color":"white","text":" ☠ "},{"bold":true,"selector":"@a[tag=murdered]"}]
+    tellraw @a [{"color":"red","text":"["},{"bold":true,"color":"dark_red","text":"KILL"},{"bold":false,"color":"red","text":"]\n"},{"bold":true,"selector":"@a[tag=killer]"},{"bold":false,"color":"white","text":"  ☠  "},{"bold":true,"selector":"@a[tag=murdered]"}]
 
 ## KILL,DEATH数追加
     scoreboard players add @a[tag=murdered] DEATH 1
