@@ -10,11 +10,19 @@
             team modify RED collisionRule never
             team modify RED color red
             team modify RED friendlyFire false
+            team modify RED nametagVisibility hideForOtherTeams
     # 青
         team add BLUE {"text": "青チーム"}
             team modify BLUE collisionRule never
             team modify BLUE color blue
             team modify BLUE friendlyFire false
+            team modify BLUE nametagVisibility hideForOtherTeams
+    # Free For All
+        team add FFA {"text": "参加者"}
+            team modify FFA collisionRule never
+            team modify FFA color yellow
+            team modify FFA nametagVisibility hideForOwnTeam
+            team modify FFA seeFriendlyInvisibles false
 
 ## スコアボード
     # dummy
