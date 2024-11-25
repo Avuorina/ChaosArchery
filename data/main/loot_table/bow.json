@@ -1,0 +1,49 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:bow"
+          }
+        ],
+        "functions": [
+          {
+            "function": "minecraft:set_count",
+            "count": 1
+          },
+          {
+            "function": "minecraft:set_name",
+            "name": {
+              "text": "弓",
+              "color": "gold",
+              "bold": true,
+              "italic": false
+            }
+          },
+          {
+            "function": "minecraft:set_lore",
+            "lore": [
+              {
+                "text": "脅しの道具ではない",
+                "color": "white",
+                "bold": false,
+                "italic": true
+              }
+            ],
+            "mode": "append"
+          },
+          {
+            "function": "minecraft:set_components",
+            "components": {
+              "minecraft:unbreakable": {
+                "show_in_tooltip": false
+              }
+            }
+          }
+        ]
+      }
+    ]
+  }
+  

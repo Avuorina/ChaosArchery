@@ -23,6 +23,10 @@
             team modify FFA color yellow
             team modify FFA nametagVisibility hideForOwnTeam
             team modify FFA seeFriendlyInvisibles false
+    # Spectator
+        team add Spectator {"text": "観戦者"}
+            team modify Spectator color black
+            team modify Spectator nametagVisibility never
 
 ## スコアボード
     # dummy
@@ -40,6 +44,13 @@
             scoreboard objectives add DEATH-ALL dummy {"text": "生涯DEATH数"}
         # K/D
             scoreboard objectives add K.D dummy {"text": "キルデス比"}
+        # _
+            scoreboard objectives add _ dummy {"text": "一時スコア"}
+        # ModeID
+            scoreboard objectives add ModeID dummy {"text": "モード"}
+                # 0 = Deathmatch
+        # STAGE
+            scoreboard objectives add StageID dummy {"text": "ステージID"}
 
 ## ゲームルール
     # 死亡画面削除
